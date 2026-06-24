@@ -3,6 +3,40 @@
 import { useState, useEffect } from 'react'
 import ReCAPTCHA from "react-google-recaptcha"
 export default function Home() {
+async function handleSubmit(e) {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
+      alert("Bericht verzonden! 💪");
+      e.target.reset();
+    } else {
+      alert("Er ging iets mis ❌");
+      console.log(result.error);
+    }
+  } catch (error) {
+    console.log(error);
+    alert("Er ging iets mis ❌");
+  }
+}
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "SportsActivityLocation",
@@ -577,10 +611,10 @@ useEffect(() => {
 
             {/* FORMULIER */}
 
-            <form
+            <form onSubmit={handleSubmit}>
   className="bg-black p-8 ..."
   onSubmit={handleSubmit}
->
+
 
               <input
                 type="text"
