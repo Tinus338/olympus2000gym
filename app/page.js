@@ -638,10 +638,12 @@ useEffect(() => {
     {successMessage}
   </div>
 )}
-<ReCAPTCHA
-  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-  className="flex justify-center"
-/>
+{process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
+  <ReCAPTCHA
+    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+    className="flex justify-center"
+  />
+)}
               <button
                 className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-xl font-bold w-full"
               ><input
