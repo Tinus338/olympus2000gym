@@ -1,0 +1,581 @@
+export default function Home() {
+  const services = [
+    {
+      title: "Vrije Fitness",
+      text: "Train zelfstandig met moderne apparatuur in een no-nonsense omgeving.",
+    },
+    {
+      title: "Krachttraining",
+      text: "Werk gericht aan spiermassa, kracht en prestaties.",
+    },
+    {
+      title: "Conditietraining",
+      text: "Verbeter je conditie en algehele gezondheid.",
+    },
+    {
+      title: "Personal Training",
+      text: "Persoonlijke begeleiding voor sneller resultaat.",
+    },
+    {
+      title: "Trainingsadvies",
+      text: "Praktische adviezen afgestemd op jouw doelen.",
+    },
+    {
+      title: "Trainingsschema's",
+      text: "Op maat gemaakte trainingsprogramma's.",
+    },
+  ]
+
+  return (
+    <main className="bg-black text-white">
+
+      {/* HERO */}
+      <section className="min-h-screen flex items-center justify-center px-6">
+
+        <div className="text-center max-w-5xl">
+
+          <p className="text-red-500 uppercase tracking-[0.3em] mb-6">
+            Olympus 2000 Gym Wageningen
+          </p>
+
+          <h1 className="text-6xl md:text-8xl font-black uppercase mb-8">
+            Geen poespas.
+            <br />
+            Gewoon trainen.
+          </h1>
+
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+            Olympus 2000 Gym Wageningen is dé plek voor sporters die serieus
+            willen werken aan kracht, conditie, gezondheid en persoonlijke
+            ontwikkeling.
+          </p>
+
+          <a
+            href="#contact"
+            className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-xl font-bold"
+          >
+            Gratis proeftraining
+          </a>
+
+        </div>
+
+      </section>
+
+      {/* OVER ONS */}
+      <section className="py-24 bg-zinc-950">
+
+        <div className="max-w-5xl mx-auto px-6">
+
+          <div className="text-center mb-12">
+
+            <p className="text-red-500 uppercase tracking-[0.3em] mb-4">
+              Over Ons
+            </p>
+
+            <h2 className="text-5xl font-black uppercase">
+              Olympus 2000 Gym
+            </h2>
+
+          </div>
+
+          <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+
+            <p>
+              Olympus 2000 Wageningen is een bekende en toegankelijke
+              sportschool waar krachttraining, conditie en persoonlijke
+              ontwikkeling centraal staan.
+            </p>
+
+            <p>
+              Wat Olympus onderscheidt is de combinatie van een no-nonsense
+              trainingsmentaliteit en een complete trainingsomgeving voor
+              zowel beginners als ervaren sporters.
+            </p>
+
+            <p>
+              Hier draait het niet om luxe of uiterlijk vertoon, maar om
+              effectief trainen en resultaat behalen.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* DIENSTEN */}
+      <section className="py-24">
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="text-center mb-16">
+
+            <p className="text-red-500 uppercase tracking-[0.3em] mb-4">
+              Diensten
+            </p>
+
+            <h2 className="text-5xl font-black uppercase">
+              Waar wij mee helpen
+            </h2>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="bg-zinc-900 rounded-3xl p-8 border border-white/10"
+              >
+                <h3 className="text-2xl font-bold mb-4">
+                  {service.title}
+                </h3>
+
+                <p className="text-gray-400">
+                  {service.text}
+                </p>
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* OPENINGSTIJDEN */}
+      <section className="py-24 bg-zinc-950">
+
+        <div className="max-w-4xl mx-auto px-6">
+
+          <div className="text-center mb-12">
+
+            <p className="text-red-500 uppercase tracking-[0.3em] mb-4">
+              Openingstijden
+            </p>
+
+            <h2 className="text-5xl font-black uppercase">
+              Train wanneer het jou uitkomt
+            </h2>
+
+          </div>
+
+          <div className="bg-black rounded-3xl p-8 border border-white/10 space-y-4">
+
+            <div className="flex justify-between">
+              <span>Maandag</span>
+              <span>07:00 - 22:00</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span>Dinsdag</span>
+              <span>07:00 - 22:00</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span>Woensdag</span>
+              <span>07:00 - 22:00</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span>Donderdag</span>
+              <span>07:00 - 22:00</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span>Vrijdag</span>
+              <span>07:00 - 22:00</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span>Zaterdag</span>
+              <span>09:00 - 21:00</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span>Zondag</span>
+              <span>09:00 - 21:00</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      {/* LIDMAATSCHAPPEN */}
+      <section className="py-24 bg-black">
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="text-center mb-16">
+
+            <p className="text-red-500 uppercase tracking-[0.3em] mb-4">
+              Lidmaatschappen
+            </p>
+
+            <h2 className="text-5xl font-black uppercase">
+              Kies jouw plan
+            </h2>
+
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            {[
+              { name: "Starter", price: "€29" },
+              { name: "Premium", price: "€39" },
+              { name: "Student", price: "€24" },
+            ].map((plan) => (
+
+              <div
+                key={plan.name}
+                className="bg-zinc-900 rounded-3xl p-8 border border-white/10"
+              >
+
+                <h3 className="text-3xl font-black mb-4">
+                  {plan.name}
+                </h3>
+
+                <div className="text-5xl font-black text-red-500 mb-6">
+                  {plan.price}
+                </div>
+
+                <p className="text-gray-400 mb-6">
+                  Neem contact op voor actuele voorwaarden.
+                </p>
+
+                <a
+                  href="#contact"
+                  className="block text-center bg-red-600 py-4 rounded-xl font-bold"
+                >
+                  Meer informatie
+                </a>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* REVIEWS */}
+      <section className="py-24 bg-zinc-950">
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="text-center mb-16">
+
+            <p className="text-red-500 uppercase tracking-[0.3em] mb-4">
+              Reviews
+            </p>
+
+            <h2 className="text-5xl font-black uppercase">
+              Wat leden zeggen
+            </h2>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+
+            <div className="bg-black rounded-3xl p-8 border border-white/10">
+
+              <div className="text-red-500 text-xl mb-4">
+                ★★★★★
+              </div>
+
+              <p className="text-gray-300 mb-4">
+                Fijne sportschool met een goede sfeer en voldoende apparatuur.
+              </p>
+
+              <strong>Google Review</strong>
+
+            </div>
+
+            <div className="bg-black rounded-3xl p-8 border border-white/10">
+
+              <div className="text-red-500 text-xl mb-4">
+                ★★★★★
+              </div>
+
+              <p className="text-gray-300 mb-4">
+                No-nonsense gym waar je echt kunt trainen.
+              </p>
+
+              <strong>Google Review</strong>
+
+            </div>
+
+          </div>
+
+          <div className="text-center mt-10">
+
+            <p className="text-2xl font-bold mb-6">
+              Google Score: 5.0 / 5 ⭐
+            </p>
+
+            <a
+              href="https://www.google.com/search?q=Olympus+2000+Gym+Wageningen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-600 px-8 py-4 rounded-xl font-bold inline-block"
+            >
+              Bekijk Google Reviews
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-black">
+
+        <div className="max-w-4xl mx-auto px-6">
+
+          <h2 className="text-5xl font-black uppercase text-center mb-12">
+            Veelgestelde Vragen
+          </h2>
+
+          <div className="space-y-6">
+
+            <details className="bg-zinc-900 rounded-2xl p-6">
+              <summary className="font-bold cursor-pointer">
+                Kan ik eerst een proeftraining volgen?
+              </summary>
+
+              <p className="mt-4 text-gray-400">
+                Ja, neem contact op voor een vrijblijvende proeftraining.
+              </p>
+            </details>
+
+            <details className="bg-zinc-900 rounded-2xl p-6">
+              <summary className="font-bold cursor-pointer">
+                Is de gym geschikt voor beginners?
+              </summary>
+
+              <p className="mt-4 text-gray-400">
+                Zeker. Zowel beginners als ervaren sporters trainen bij Olympus.
+              </p>
+            </details>
+
+            <details className="bg-zinc-900 rounded-2xl p-6">
+              <summary className="font-bold cursor-pointer">
+                Is begeleiding beschikbaar?
+              </summary>
+
+              <p className="mt-4 text-gray-400">
+                Ja, wij bieden trainingsadvies en persoonlijke begeleiding.
+              </p>
+            </details>
+
+          </div>
+
+        </div>
+
+      </section>
+            {/* CONTACT */}
+      <section
+        id="contact"
+        className="py-24 bg-zinc-950"
+      >
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="text-center mb-16">
+
+            <p className="text-red-500 uppercase tracking-[0.3em] mb-4">
+              Contact
+            </p>
+
+            <h2 className="text-5xl font-black uppercase">
+              Start Vandaag
+            </h2>
+
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+
+            {/* INFO */}
+
+            <div>
+
+              <h3 className="text-3xl font-bold mb-6">
+                Olympus 2000 Gym
+              </h3>
+
+              <div className="space-y-4 text-gray-300">
+
+                <p>
+                  📍 Industrieweg 46a
+                  <br />
+                  6702 DR Wageningen
+                </p>
+
+                <p>
+                  📞 0317 415 625
+                </p>
+
+                <p>
+                  ⭐ Google Score: 5.0 / 5
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* FORMULIER */}
+
+            <form
+              className="bg-black p-8 rounded-3xl border border-white/10 space-y-6"
+            >
+
+              <input
+                type="text"
+                placeholder="Naam"
+                className="w-full bg-zinc-900 p-4 rounded-xl"
+              />
+
+              <input
+                type="email"
+                placeholder="E-mailadres"
+                className="w-full bg-zinc-900 p-4 rounded-xl"
+              />
+
+              <input
+                type="tel"
+                placeholder="Telefoonnummer"
+                className="w-full bg-zinc-900 p-4 rounded-xl"
+              />
+
+              <textarea
+                rows="5"
+                placeholder="Bericht"
+                className="w-full bg-zinc-900 p-4 rounded-xl"
+              />
+
+              <label className="flex gap-3 text-sm text-gray-400">
+
+                <input
+                  type="checkbox"
+                  required
+                />
+
+                <span>
+                  Ik ga akkoord met het verwerken van mijn gegevens.
+                </span>
+
+              </label>
+
+              <button
+                className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-xl font-bold w-full"
+              >
+                Verstuur aanvraag
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* GOOGLE MAPS */}
+
+      <section className="bg-black">
+
+        <iframe
+          src="https://maps.google.com/maps?q=Industrieweg%2046a%20Wageningen&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="500"
+          loading="lazy"
+        />
+
+      </section>
+
+      {/* FOOTER */}
+
+      <footer className="bg-zinc-950 py-12 border-t border-white/10">
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            <div>
+
+              <h3 className="text-2xl font-black mb-4">
+                Olympus 2000 Gym
+              </h3>
+
+              <p className="text-gray-400">
+                Dé sportschool van Wageningen voor kracht,
+                conditie en persoonlijke ontwikkeling.
+              </p>
+
+            </div>
+
+            <div>
+
+              <h4 className="font-bold mb-4">
+                Contact
+              </h4>
+
+              <p className="text-gray-400">
+                Industrieweg 46a
+              </p>
+
+              <p className="text-gray-400">
+                Wageningen
+              </p>
+
+              <p className="text-gray-400">
+                0317 415 625
+              </p>
+
+            </div>
+
+            <div>
+
+              <h4 className="font-bold mb-4">
+                Handige Links
+              </h4>
+
+              <div className="space-y-2">
+
+                <a
+                  href="/privacy"
+                  className="block text-gray-400 hover:text-white"
+                >
+                  Privacybeleid
+                </a>
+
+                <a
+                  href="https://maps.google.com/?q=Industrieweg+46a+Wageningen"
+                  target="_blank"
+                  className="block text-gray-400 hover:text-white"
+                >
+                  Route plannen
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="border-t border-white/10 mt-10 pt-8 text-center text-gray-500">
+
+            © {new Date().getFullYear()} Olympus 2000 Gym Wageningen
+
+          </div>
+
+        </div>
+
+      </footer>
+    </main>
+  )
+}
