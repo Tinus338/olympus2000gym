@@ -40,10 +40,10 @@ export default function Contact() {
             </p>
 
             <a
-              href="mailto:davidsemariska@hotmail.com"
+              href="mailto:info@davidsemariska.nl"
               className="text-xl md:text-2xl text-stone-800 hover:text-stone-500 transition-colors duration-300"
             >
-              davidsemariska@hotmail.com
+              info@davidsemariska.nl
             </a>
 
             <div className="mt-7">
