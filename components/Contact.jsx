@@ -48,7 +48,7 @@ export default function Contact() {
 
             <div className="mt-7">
               <a
-                href="mailto:davidsemariska@hotmail.com"
+                href="mailto:info@davidsemariska.nl"
                 className="inline-block rounded-full bg-stone-800 text-white px-8 py-4 font-medium hover:bg-stone-900 hover:scale-[1.01] transition-all duration-300"
               >
                 Stuur een e-mail
