@@ -40,15 +40,15 @@ export default function Contact() {
             </p>
 
             <a
-              href="mailto:info@davidsemariska.nl"
+              href="mailto:info@mariskadavidse.nl"
               className="text-xl md:text-2xl text-stone-800 hover:text-stone-500 transition-colors duration-300"
             >
-              info@davidsemariska.nl
+              info@mariskadavidse.nl
             </a>
 
             <div className="mt-7">
               <a
-                href="mailto:info@davidsemariska.nl"
+                href="mailto:info@mariskadavidse.nl"
                 className="inline-block rounded-full bg-stone-800 text-white px-8 py-4 font-medium hover:bg-stone-900 hover:scale-[1.01] transition-all duration-300"
               >
                 Stuur een e-mail
