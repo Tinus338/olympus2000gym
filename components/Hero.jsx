@@ -66,7 +66,7 @@ export default function Hero() {
 
             <div>
               <h3 className="text-3xl font-light text-stone-800">1-op-1</h3>
-              <p className="text-stone-500 mt-2 text-sm">Begeleiding</p>
+              <p className="text-stone-500 mt-2 text-sm">Online begeleiding</p>
             </div>
           </div>
         </motion.div>

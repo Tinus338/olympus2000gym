@@ -17,40 +17,34 @@ export default function About() {
           </p>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-stone-800 leading-tight mb-8">
-            Psychologische expertise,
+            Psychologische expertise
             <br />
-            gecombineerd met
-            <br />
-            praktijkervaring.
+            voor mens & organisatie
+          
           </h2>
 
           <p className="text-lg text-stone-600 leading-8 mb-6">
-            Ik ben GZ-psycholoog met ruim twintig jaar ervaring binnen de
-            geestelijke gezondheidszorg, arbodienstverlening en zakelijke
-            dienstverlening.
+            Ik werk ruim twintig jaar als GZ-psycholoog en executive coach binnen de geestelijke
+            gezondheidszorg, arbodienstverlening en zakelijke dienstverlening. 
+            Daarnaast heb ik meer dan tien jaar ervaring als leidinggevende, 
+            bestuurder, directeur en ondernemer.
           </p>
 
           <p className="text-lg text-stone-600 leading-8 mb-6">
-            Daarnaast heb ik meer dan tien jaar ervaring als manager,
-            bestuurder, directeur en ondernemer. Als voormalig eigenaar en
-            directeur ken ik de uitdagingen van verantwoordelijkheid dragen,
-            leidinggeven en ondernemen van binnenuit.
+            Die combinatie bepaalt hoe ik naar vraagstukken kijk. Ik kijk naar wat er speelt, welke factoren van invloed zijn en wat iemand nodig heeft om verder te komen. Daarbij betrek ik niet alleen de persoon, maar ook de context van werk, verantwoordelijkheid en leven.
           </p>
 
           <p className="text-lg text-stone-600 leading-8 mb-8">
-            Die combinatie van psychologische expertise en praktijkervaring
-            stelt mij in staat om mensen te begeleiden bij zowel persoonlijke
-            als professionele vraagstukken.
+            Als voormalig eigenaar en directeur ken ik de dynamiek van leidinggeven, ondernemen en verantwoordelijkheid dragen van binnenuit. Die ervaring helpt mij om professionele en leiderschapsvraagstukken vanuit verschillende perspectieven te bekijken.
           </p>
 
-          <div className="border-l-2 border-[#a9b9a2] pl-6">
-            <p className="text-stone-700 leading-7 italic">
-              "Mijn aanpak is betrokken, deskundig, reflectief en praktisch.
-              Ik geloof dat duurzame ontwikkeling ontstaat wanneer inzicht
-              leidt tot beweging en verandering."
-            </p>
-          </div>
-        </motion.div>
+          
+<div>
+  <p className="text-lg text-stone-600 leading-8 mb-8">
+    Mijn begeleiding is gericht op inzicht én resultaat: begrijpen wat er speelt, patronen herkennen en gericht werken aan wat nodig is om klachten te verminderen, anders met situaties om te gaan of verdere ontwikkeling mogelijk te maken.
+  </p>
+</div>
+</motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: 40 }}
@@ -69,7 +63,7 @@ export default function About() {
             <div className="space-y-7">
               <div>
                 <h3 className="text-xl font-medium text-stone-800">
-                  GZ-Psycholoog
+                  GZ-Psycholoog & Executive coach
                 </h3>
                 <p className="text-stone-500 mt-2 leading-6">
                   Ruim 20 jaar ervaring in psychologie, behandeling en
@@ -93,10 +87,10 @@ export default function About() {
 
               <div>
                 <h3 className="text-xl font-medium text-stone-800">
-                  Persoonlijke begeleiding
+                  Persoonlijke online begeleiding
                 </h3>
                 <p className="text-stone-500 mt-2 leading-6">
-                  Een betrokken en praktische aanpak met aandacht voor duurzame
+                  Een betrokken en professionele aanpak met aandacht voor duurzame
                   ontwikkeling.
                 </p>
               </div>

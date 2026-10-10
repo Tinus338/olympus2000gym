@@ -29,9 +29,7 @@ export default function Contact() {
           </h2>
 
           <p className="mt-7 text-lg leading-8 text-stone-600">
-            Wilt u bespreken wat ik voor u kan betekenen? Neem dan rechtstreeks
-            contact met mij op via e-mail. Ik kom vervolgens persoonlijk bij u
-            terug.
+            Wilt u weten wat ik voor u kan betekenen? Neem gerust contact met mij op via e-mail. Ik reageer persoonlijk op uw bericht.
           </p>
 
           <div className="mt-10 bg-white rounded-[32px] p-8 md:p-10 shadow-xl border border-stone-200">
