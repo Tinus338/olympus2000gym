@@ -79,15 +79,16 @@ export default function Hero() {
         >
           <div className="absolute h-[90%] w-[90%] rounded-[40px] bg-[#dfe8da] blur-3xl opacity-40" />
 
-          <motion.img
-            src="/mariska.jpg"
-            alt="Mariska Davidse"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.4 }}
-            className="relative rounded-[36px] shadow-2xl w-full max-w-md object-cover"
-          />
-        </motion.div>
-      </div>
+          
+<motion.img
+  src="/mariska.jpg"
+  alt="Mariska Davidse"
+  whileHover={{ scale: 1.02 }}
+  transition={{ duration: 0.4 }}
+  className="relative rounded-[36px] shadow-2xl w-full max-w-sm object-cover"
+/>
+</motion.div>
+</div>
 
       <motion.div
         initial={{ opacity: 0 }}
