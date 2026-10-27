@@ -16,7 +16,7 @@ export default function Services() {
       ],
     },
     {
-      title: "Psychologische Begeleiding & Behandeling",
+      title: "Psychologische Begeleiding",
       text: "Professionele ondersteuning bij psychische klachten of vastgelopen patronen.",
       items: [
         "Stress en burn-out",
